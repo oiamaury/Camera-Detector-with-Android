@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity"
+	android:background="#000000">
+
+	<FrameLayout
+		android:id="@+id/frame"
+		android:layout_width="match_parent"
+		android:layout_height="360dp">
+
+		<TextureView
+			android:id="@+id/surface"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_alignParentTop="true"
+			android:layout_marginBottom="8dp"
+			android:layout_marginEnd="8dp"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="8dp"
+			android:layout_centerHorizontal="true"/>
+
+	</FrameLayout>
+
+	<ProgressBar
+		android:layout_width="match_parent"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_height="wrap_content"
+		android:indeterminate="true"
+		android:layout_alignParentBottom="true"
+		android:layout_margin="8dp"
+		android:id="@+id/pb"/>
+
+	<ListView
+		android:id="@+id/wifiList"
+		android:layout_below="@+id/frame"
+		android:layout_above="@+id/pb"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:dividerHeight="1dp"
+		android:isScrollContainer="true"
+		android:textAlignment="center"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:paddingTop="40dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Wi-Fi Networks"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_below="@id/frame"
+		android:layout_marginLeft="10dp"
+		android:textColor="#FFFFFF"/>
+
+</RelativeLayout>
+
